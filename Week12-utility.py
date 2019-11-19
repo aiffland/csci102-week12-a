@@ -50,4 +50,14 @@ def ScoreFinder(team, points, player):
         result="OUTPUT player not found"
 
     return result
+
+
+def Union(uno, dos):
+    added=uno+dos
+    endresult=[]
+    for i in added:
+        if i not in endresult:
+            endresult.append(i)
+    return endresult
+    
     
