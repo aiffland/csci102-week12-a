@@ -59,5 +59,14 @@ def Union(uno, dos):
         if i not in endresult:
             endresult.append(i)
     return endresult
-    
-    
+
+
+def Intersection(uno, dos):
+    added=uno+dos
+    endresult=[]
+    for i in uno:
+        if i in dos:
+            endresult.append(i)
+    return endresult
+
+
