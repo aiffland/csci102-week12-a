@@ -70,3 +70,12 @@ def Intersection(uno, dos):
     return endresult
 
 
+def NotIn(uno, dos):
+    endresult=[]
+    for i in uno:
+        if i not in dos:
+            endresult.append(i)
+    return endresult
+
+    
+
