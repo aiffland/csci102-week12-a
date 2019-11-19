@@ -26,4 +26,11 @@ def UpdateString(string, letter, index):
     
     return final
     
-            
+
+def FindWordCount(list_boi, word):
+    count=0
+    for i in range(len(list_boi)):
+        if list_boi[i]==word:
+            count+=1
+
+    return count
