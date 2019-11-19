@@ -3,7 +3,10 @@
 # Week 12 part A
 
 def PrintOutput(string):
-    return print("OUTPUT", string)
+    begin="OUTPUT "
+    string=begin+string
+    return string
+
 
 def LoadFile(string):
     tot_list=[]
@@ -13,5 +16,14 @@ def LoadFile(string):
 
     return tot_list
 
+
+def UpdateString(string, letter, index):
+    final=""
+    change=list(string)
+    change[int(index)]=letter
+    for i in change:
+        final+= i
+    
+    return final
     
             
