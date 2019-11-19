@@ -34,3 +34,20 @@ def FindWordCount(list_boi, word):
             count+=1
 
     return count
+
+
+def ScoreFinder(team, points, player):
+    index=-1
+    for i in range(len(team)):
+        them=team[i].lower()
+        dude=player.lower()
+        if them==dude:
+            index=i
+
+    if index!=-1:
+        result="OUTPUT "+team[index]+" got a score of "+str(points[i])
+    if index==-1:
+        result="OUTPUT player not found"
+
+    return result
+    
